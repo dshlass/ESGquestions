@@ -10,7 +10,7 @@
 <body>
 	<div class="wrapper">
 	<h1>ESG</h1>
-		<form> 
+		<form id="myForm"> 
 			<div class="section"> <!--Environmental Section-->
 			<input id="section-one" type="checkbox" name="tabs">
 			<label for="section-one" class="environmental-label">Environmental</label>
@@ -29,7 +29,7 @@
 														 name="resources-usage" value="-1">
 											<label for="resource-usage2">Unimportant</label>
 											<input type="radio" id="resource-usage3"
-														 name="resources-usage" value="0">
+														 name="resources-usage" value="0" checked>
 											<label for="resource-usage3">Neutral</label>
 											<input type="radio" id="resource-usage4"
 														 name="resources-usage" value="1">
@@ -53,7 +53,7 @@
 														 name="emissions" value="-1">
 											<label for="emissions2">Unimportant</label>
 											<input type="radio" id="emissions3"
-														 name="emissions" value="0">
+														 name="emissions" value="0" checked>
 											<label for="emissions3">Neutral</label>
 											<input type="radio" id="emissions4"
 														 name="emissions" value="1">
@@ -77,7 +77,7 @@
 															 name="resources-innovation" value="-1">
 												<label for="resource-innovation2">Unimportant</label>
 												<input type="radio" id="resource-innovation3"
-															 name="resources-innovation" value="0">
+															 name="resources-innovation" value="0" checked>
 												<label for="resource-innovation3">Neutral</label>
 												<input type="radio" id="resource-innovation4"
 															 name="resources-innovation" value="1">
@@ -108,7 +108,7 @@
 														 name="health-op" value="-1">
 											<label for="health-op2">Unimportant</label>
 											<input type="radio" id="health-op3"
-														 name="health-op" value="0">
+														 name="health-op" value="0" checked>
 											<label for="health-op3">Neutral</label>
 											<input type="radio" id="health-op4"
 														 name="health-op" value="1">
@@ -132,7 +132,7 @@
 														 name="div-eq" value="-1">
 											<label for="div-eq2">Unimportant</label>
 											<input type="radio" id="div-eq3"
-														 name="div-eq" value="0">
+														 name="div-eq" value="0" checked>
 											<label for="div-eq3">Neutral</label>
 											<input type="radio" id="div-eq4"
 														 name="div-eq" value="1">
@@ -156,7 +156,7 @@
 															 name="human-rights" value="-1">
 												<label for="human-rights2">Unimportant</label>
 												<input type="radio" id="human-rights3"
-															 name="human-rights" value="0">
+															 name="human-rights" value="0" checked>
 												<label for="human-rights3">Neutral</label>
 												<input type="radio" id="human-rights4"
 															 name="human-rights" value="1">
@@ -180,7 +180,7 @@
 															 name="community" value="-1">
 												<label for="community2">Unimportant</label>
 												<input type="radio" id="community3"
-															 name="community" value="0">
+															 name="community" value="0" checked>
 												<label for="community3">Neutral</label>
 												<input type="radio" id="community4"
 															 name="community" value="1">
@@ -204,7 +204,7 @@
 															 name="product-res" value="-1">
 												<label for="product-res2">Unimportant</label>
 												<input type="radio" id="product-res3"
-															 name="product-res" value="0">
+															 name="product-res" value="0" checked>
 												<label for="product-res3">Neutral</label>
 												<input type="radio" id="product-res4"
 															 name="product-res" value="1">
@@ -235,7 +235,7 @@
 														 name="management" value="-1">
 											<label for="management2">Unimportant</label>
 											<input type="radio" id="management3"
-														 name="management" value="0">
+														 name="management" value="0" checked>
 											<label for="management3">Neutral</label>
 											<input type="radio" id="management4"
 														 name="management" value="1">
@@ -259,7 +259,7 @@
 														 name="shareholders" value="-1">
 											<label for="shareholders2">Unimportant</label>
 											<input type="radio" id="shareholders3"
-														 name="shareholders" value="0">
+														 name="shareholders" value="0" checked>
 											<label for="shareholders3">Neutral</label>
 											<input type="radio" id="shareholders4"
 														 name="shareholders" value="1">
@@ -279,11 +279,11 @@
 												<input type="radio" id="corp-res1"
 															 name="corp-res" value="-2">
 												<label for="corp-res1">Very Unimportant</label>
-												<input type="radio" id="corp-res"
+												<input type="radio" id="corp-res2"
 															 name="corp-res" value="-1">
 												<label for="corp-res2">Unimportant</label>
-												<input type="radio" id="corp-res"
-															 name="corp-res" value="0">
+												<input type="radio" id="corp-res3"
+															 name="corp-res" value="0" checked>
 												<label for="corp-res3">Neutral</label>
 												<input type="radio" id="corp-res4"
 															 name="corp-res" value="1">
@@ -307,7 +307,7 @@
 															 name="scope-audit" value="-1">
 												<label for="scope-audit2">Unimportant</label>
 												<input type="radio" id="scope-audit"
-															 name="scope-audit" value="0">
+															 name="scope-audit" value="0" checked>
 												<label for="scope-audit3">Neutral</label>
 												<input type="radio" id="scope-audit4"
 															 name="scope-audit" value="1">
@@ -322,10 +322,39 @@
 		</div>
 
 		</form>
-
+		<p id="demo"></p>
+		<button onclick="myFunction()">Submit</button>
 		<div>
 			<h1>hello world</h1>
 		</div>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+		<script>
+			function myFunction() {
+				// console.log($('input[name=resources-usage]:checked').val());
+				// console.log($('input[name=emissions]:checked').val());
+				// console.log($('input[name=resources-innovation]:checked').val());
+				// console.log($('input[name=health-op]:checked').val());
+				// console.log($('input[name=div-eq]:checked').val());
+				// console.log($('input[name=human-rights]:checked').val());
+				// console.log($('input[name=community]:checked').val());
+				// console.log($('input[name=product-res]:checked').val());
+				// console.log($('input[name=management]:checked').val());
+				// console.log($('input[name=shareholders]:checked').val());
+				// console.log($('input[name=corp-res]:checked').val());
+				// console.log($('input[name=scope-audit]:checked').val());
+
+				let enviromentalVector = [$('input[name=resources-usage]:checked').val(),$('input[name=emissions]:checked').val(),$('input[name=resources-innovation]:checked').val()];
+				let socialVector = [$('input[name=health-op]:checked').val(), $('input[name=div-eq]:checked').val(), $('input[name=human-rights]:checked').val(), $('input[name=community]:checked').val(), $('input[name=product-res]:checked').val(), $('input[name=management]:checked').val()];
+				let governanceVector = [$('input[name=shareholders]:checked').val(),$('input[name=corp-res]:checked').val(),$('input[name=scope-audit]:checked').val()];
+				console.log(enviromentalVector);
+				console.log(socialVector);
+				console.log(governanceVector);
+
+			}
+		</script>
 
 </body>
 </html>
