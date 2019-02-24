@@ -10,14 +10,15 @@
 <body>
 	<div class="wrapper">
 	<h1>ESG</h1>
-		<form class="section">
+		<form> 
+			<div class="section"> <!--Environmental Section-->
 			<input id="section-one" type="checkbox" name="tabs">
 			<label for="section-one" class="environmental-label">Environmental</label>
 			<div class="section-content">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
 						<div class="sub-section">
-							<input id="meta-one" type="checkbox" name="tabs">
-							<label for="meta-one" class="environmental-meta">Resource Usage</label>
+							<input id="env-meta-one" type="radio" name="tabs">
+							<label for="env-meta-one" class="environmental-meta">Resource Usage</label>
 							<div class="sub-section-content">
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore itaque nostrum ipsam possimus minus. Nam repellat deleniti voluptatibus sint error.</p>
 										<div class="choice">
@@ -40,8 +41,8 @@
 							</div>
 						</div>
 						<div class="sub-section">
-								<input id="meta-two" type="checkbox" name="tabs">
-								<label for="meta-two" class="environmental-meta">Emissions</label>
+								<input id="env-meta-two" type="radio" name="tabs">
+								<label for="env-meta-two" class="environmental-meta">Emissions</label>
 								<div class="sub-section-content">
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore itaque nostrum ipsam possimus minus. Nam repellat deleniti voluptatibus sint error.</p>
 									<div class="choice">
@@ -64,8 +65,8 @@
 								</div>
 							</div>
 							<div class="sub-section">
-									<input id="meta-three" type="checkbox" name="tabs">
-									<label for="meta-three" class="environmental-meta">Resource Innovation</label>
+									<input id="env-meta-three" type="radio" name="tabs">
+									<label for="env-meta-three" class="environmental-meta">Resource Innovation</label>
 									<div class="sub-section-content">
 										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore itaque nostrum ipsam possimus minus. Nam repellat deleniti voluptatibus sint error.</p>
 										<div class="choice">
@@ -88,6 +89,238 @@
 									</div>
 								</div>
 			</div>
+		</div>
+		<div class="section"> <!--Social Section-->
+			<input id="section-two" type="checkbox" name="tabs">
+			<label for="section-two" class="social-label">Social</label>
+			<div class="section-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+						<div class="sub-section">
+							<input id="soc-meta-one" type="radio" name="tabs">
+							<label for="soc-meta-one" class="social-meta">Health Opportunities</label>
+							<div class="sub-section-content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore itaque nostrum ipsam possimus minus. Nam repellat deleniti voluptatibus sint error.</p>
+										<div class="choice">
+											<input type="radio" id="health-op1"
+														 name="health-op" value="-2">
+											<label for="health-op1">Very Unimportant</label>
+											<input type="radio" id="health-op2"
+														 name="health-op" value="-1">
+											<label for="health-op2">Unimportant</label>
+											<input type="radio" id="health-op3"
+														 name="health-op" value="0">
+											<label for="health-op3">Neutral</label>
+											<input type="radio" id="health-op4"
+														 name="health-op" value="1">
+											<label for="health-op4">Important</label>
+											<input type="radio" id="health-op5"
+														 name="health-op" value="2">
+											<label for="health-op5">Very Important</label>
+										</div>
+							</div>
+						</div>
+						<div class="sub-section">
+								<input id="soc-meta-two" type="radio" name="tabs">
+								<label for="soc-meta-two" class="social-meta">Diversity/Equity</label>
+								<div class="sub-section-content">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore itaque nostrum ipsam possimus minus. Nam repellat deleniti voluptatibus sint error.</p>
+									<div class="choice">
+											<input type="radio" id="div-eq1"
+														 name="div-eq" value="-2">
+											<label for="div-eq1">Very Unimportant</label>
+											<input type="radio" id="div-eq2"
+														 name="div-eq" value="-1">
+											<label for="div-eq2">Unimportant</label>
+											<input type="radio" id="div-eq3"
+														 name="div-eq" value="0">
+											<label for="div-eq3">Neutral</label>
+											<input type="radio" id="div-eq4"
+														 name="div-eq" value="1">
+											<label for="div-eq4">Important</label>
+											<input type="radio" id="div-eq5"
+														 name="div-eq" value="2">
+											<label for="div-eq5">Very Important</label>
+										</div>
+								</div>
+							</div>
+							<div class="sub-section">
+									<input id="soc-meta-three" type="radio" name="tabs">
+									<label for="soc-meta-three" class="social-meta">Human Rights</label>
+									<div class="sub-section-content">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore itaque nostrum ipsam possimus minus. Nam repellat deleniti voluptatibus sint error.</p>
+										<div class="choice">
+												<input type="radio" id="human-rights1"
+															 name="human-rights" value="-2">
+												<label for="human-rights1">Very Unimportant</label>
+												<input type="radio" id="human-rights2"
+															 name="human-rights" value="-1">
+												<label for="human-rights2">Unimportant</label>
+												<input type="radio" id="human-rights3"
+															 name="human-rights" value="0">
+												<label for="human-rights3">Neutral</label>
+												<input type="radio" id="human-rights4"
+															 name="human-rights" value="1">
+												<label for="human-rights4">Important</label>
+												<input type="radio" id="human-rights5"
+															 name="human-rights" value="2">
+												<label for="human-rights5">Very Important</label>
+											</div>
+									</div>
+								</div>
+								<div class="sub-section">
+									<input id="soc-meta-four" type="radio" name="tabs">
+									<label for="soc-meta-four" class="social-meta">Community</label>
+									<div class="sub-section-content">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore itaque nostrum ipsam possimus minus. Nam repellat deleniti voluptatibus sint error.</p>
+										<div class="choice">
+												<input type="radio" id="community1"
+															 name="community" value="-2">
+												<label for="community1">Very Unimportant</label>
+												<input type="radio" id="community2"
+															 name="community" value="-1">
+												<label for="community2">Unimportant</label>
+												<input type="radio" id="community3"
+															 name="community" value="0">
+												<label for="community3">Neutral</label>
+												<input type="radio" id="community4"
+															 name="community" value="1">
+												<label for="community4">Important</label>
+												<input type="radio" id="community5"
+															 name="community" value="2">
+												<label for="community5">Very Important</label>
+											</div>
+									</div>
+								</div>
+								<div class="sub-section">
+									<input id="soc-meta-five" type="radio" name="tabs">
+									<label for="soc-meta-five" class="social-meta">Product Responsibility</label>
+									<div class="sub-section-content">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore itaque nostrum ipsam possimus minus. Nam repellat deleniti voluptatibus sint error.</p>
+										<div class="choice">
+												<input type="radio" id="product-res1"
+															 name="product-res" value="-2">
+												<label for="product-res1">Very Unimportant</label>
+												<input type="radio" id="product-res2"
+															 name="product-res" value="-1">
+												<label for="product-res2">Unimportant</label>
+												<input type="radio" id="product-res3"
+															 name="product-res" value="0">
+												<label for="product-res3">Neutral</label>
+												<input type="radio" id="product-res4"
+															 name="product-res" value="1">
+												<label for="product-res4">Important</label>
+												<input type="radio" id="product-res5"
+															 name="product-res" value="2">
+												<label for="product-res5">Very Important</label>
+											</div>
+									</div>
+								</div>
+			</div>
+		</div>
+		<div class="section"> <!--Governance Section-->
+			<input id="section-three" type="checkbox" name="tabs">
+			<label for="section-three" class="governance-label">Governance</label>
+			<div class="section-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+						<div class="sub-section">
+							<input id="gov-meta-one" type="radio" name="tabs">
+							<label for="gov-meta-one" class="governance-meta">Management</label>
+							<div class="sub-section-content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore itaque nostrum ipsam possimus minus. Nam repellat deleniti voluptatibus sint error.</p>
+										<div class="choice">
+											<input type="radio" id="management1"
+														 name="management" value="-2">
+											<label for="management1">Very Unimportant</label>
+											<input type="radio" id="management2"
+														 name="management" value="-1">
+											<label for="management2">Unimportant</label>
+											<input type="radio" id="management3"
+														 name="management" value="0">
+											<label for="management3">Neutral</label>
+											<input type="radio" id="management4"
+														 name="management" value="1">
+											<label for="management4">Important</label>
+											<input type="radio" id="management5"
+														 name="management" value="2">
+											<label for="management5">Very Important</label>
+										</div>
+							</div>
+						</div>
+						<div class="sub-section">
+								<input id="gov-meta-two" type="radio" name="tabs">
+								<label for="gov-meta-two" class="governance-meta">Shadreholders</label>
+								<div class="sub-section-content">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore itaque nostrum ipsam possimus minus. Nam repellat deleniti voluptatibus sint error.</p>
+									<div class="choice">
+											<input type="radio" id="shareholders1"
+														 name="shareholders" value="-2">
+											<label for="shareholders1">Very Unimportant</label>
+											<input type="radio" id="shareholders2"
+														 name="shareholders" value="-1">
+											<label for="shareholders2">Unimportant</label>
+											<input type="radio" id="shareholders3"
+														 name="shareholders" value="0">
+											<label for="shareholders3">Neutral</label>
+											<input type="radio" id="shareholders4"
+														 name="shareholders" value="1">
+											<label for="shareholders4">Important</label>
+											<input type="radio" id="shareholders5"
+														 name="shareholders" value="2">
+											<label for="shareholders5">Very Important</label>
+										</div>
+								</div>
+							</div>
+							<div class="sub-section">
+									<input id="gov-meta-three" type="radio" name="tabs">
+									<label for="gov-meta-three" class="governance-meta">Corporate Responsibility</label>
+									<div class="sub-section-content">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore itaque nostrum ipsam possimus minus. Nam repellat deleniti voluptatibus sint error.</p>
+										<div class="choice">
+												<input type="radio" id="corp-res1"
+															 name="corp-res" value="-2">
+												<label for="corp-res1">Very Unimportant</label>
+												<input type="radio" id="corp-res"
+															 name="corp-res" value="-1">
+												<label for="corp-res2">Unimportant</label>
+												<input type="radio" id="corp-res"
+															 name="corp-res" value="0">
+												<label for="corp-res3">Neutral</label>
+												<input type="radio" id="corp-res4"
+															 name="corp-res" value="1">
+												<label for="corp-res4">Important</label>
+												<input type="radio" id="corp-res5"
+															 name="corp-res" value="2">
+												<label for="corp-res5">Very Important</label>
+											</div>
+									</div>
+								</div>
+								<div class="sub-section">
+									<input id="gov-meta-four" type="radio" name="tabs">
+									<label for="gov-meta-four" class="governance-meta">ESG Scope/Audit</label>
+									<div class="sub-section-content">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore itaque nostrum ipsam possimus minus. Nam repellat deleniti voluptatibus sint error.</p>
+										<div class="choice">
+												<input type="radio" id="scope-audit1"
+															 name="scope-audit" value="-2">
+												<label for="scope-audit1">Very Unimportant</label>
+												<input type="radio" id="scope-audit"
+															 name="scope-audit" value="-1">
+												<label for="scope-audit2">Unimportant</label>
+												<input type="radio" id="scope-audit"
+															 name="scope-audit" value="0">
+												<label for="scope-audit3">Neutral</label>
+												<input type="radio" id="scope-audit4"
+															 name="scope-audit" value="1">
+												<label for="scope-audit4">Important</label>
+												<input type="radio" id="scope-audit5"
+															 name="scope-audit" value="2">
+												<label for="scope-audit5">Very Important</label>
+											</div>
+									</div>
+								</div>
+			</div>
+		</div>
+
 		</form>
 
 		<div>

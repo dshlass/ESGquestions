@@ -37,8 +37,17 @@ body {
 }
 
 .environmental-label {
-    background: green;
+    background: #006000;
 }
+
+.social-label {
+  background: #B09000;
+}
+
+.governance-label {
+  background: #000060;
+}
+
   .section-content {
     max-height: 0;
     overflow: hidden;
@@ -108,8 +117,15 @@ body {
     }
     
     .environmental-meta {
-        background: #bada55;
+        background: #2A992A;
     }
+    .social-meta {
+      background: #D6B20F;
+  }
+
+  .governance-meta {
+    background: #01019E;
+}
       .sub-section-content {
         max-height: 0;
         overflow: hidden;
@@ -156,11 +172,7 @@ body {
         transform: rotateX(180deg);
       } */
 
-/*Radio*/
-form {
-    padding: 1px;
-}
-
+/*Radio OPTIONS*/
 .choice {
     display: flex;
     flex-direction: column;
@@ -170,13 +182,13 @@ form {
     margin: 10px 0;
 }
 
-[type="radio"]:checked,
-[type="radio"]:not(:checked) {
+.choice [type="radio"]:checked,
+.choice [type="radio"]:not(:checked) {
     position: absolute;
     left: -9999px;
 }
-[type="radio"]:checked + label,
-[type="radio"]:not(:checked) + label
+.choice [type="radio"]:checked + label,
+.choice [type="radio"]:not(:checked) + label
 {
     position: relative;
     padding-left: 28px;
@@ -185,8 +197,8 @@ form {
     display: inline-block;
     color: #666;
 }
-[type="radio"]:checked + label:before,
-[type="radio"]:not(:checked) + label:before {
+.choice [type="radio"]:checked + label:before,
+.choice [type="radio"]:not(:checked) + label:before {
     content: '';
     position: absolute;
     left: 0;
@@ -197,8 +209,8 @@ form {
     border-radius: 100%;
     background: #fff;
 }
-[type="radio"]:checked + label:after,
-[type="radio"]:not(:checked) + label:after {
+.choice [type="radio"]:checked + label:after,
+.choice [type="radio"]:not(:checked) + label:after {
     content: '';
     width: 12px;
     height: 12px;
@@ -210,12 +222,12 @@ form {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
-[type="radio"]:not(:checked) + label:after {
+.choice [type="radio"]:not(:checked) + label:after {
     opacity: 0;
     -webkit-transform: scale(0);
     transform: scale(0);
 }
-[type="radio"]:checked + label:after {
+.choice [type="radio"]:checked + label:after {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
