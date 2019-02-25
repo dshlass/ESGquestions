@@ -329,7 +329,7 @@
 		</div>
 
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
 
 		<script>
 			function myFunction() {
@@ -346,12 +346,114 @@
 				// console.log($('input[name=corp-res]:checked').val());
 				// console.log($('input[name=scope-audit]:checked').val());
 
-				let enviromentalVector = [$('input[name=resources-usage]:checked').val(),$('input[name=emissions]:checked').val(),$('input[name=resources-innovation]:checked').val()];
-				let socialVector = [$('input[name=health-op]:checked').val(), $('input[name=div-eq]:checked').val(), $('input[name=human-rights]:checked').val(), $('input[name=community]:checked').val(), $('input[name=product-res]:checked').val(), $('input[name=management]:checked').val()];
-				let governanceVector = [$('input[name=shareholders]:checked').val(),$('input[name=corp-res]:checked').val(),$('input[name=scope-audit]:checked').val()];
-				console.log(enviromentalVector);
-				console.log(socialVector);
-				console.log(governanceVector);
+				// let enviromentalVector = [$('input[name=resources-usage]:checked').val(),$('input[name=emissions]:checked').val(),$('input[name=resources-innovation]:checked').val()];
+				// let socialVector = [$('input[name=health-op]:checked').val(), $('input[name=div-eq]:checked').val(), $('input[name=human-rights]:checked').val(), $('input[name=community]:checked').val(), $('input[name=product-res]:checked').val(), $('input[name=management]:checked').val()];
+				// let governanceVector = [$('input[name=shareholders]:checked').val(),$('input[name=corp-res]:checked').val(),$('input[name=scope-audit]:checked').val()];
+				// console.log(enviromentalVector);
+				// console.log(socialVector);
+				// console.log(governanceVector);
+
+				let envMetaOne = document.querySelectorAll('input[name=resources-usage]');
+				let envMetaTwo = document.querySelectorAll('input[name=emissions]');
+				let envMetaThree = document.querySelectorAll('input[name=resources-innovation]');
+				let socMetaOne = document.querySelectorAll('input[name=health-op]');
+				let socMetaTwo = document.querySelectorAll('input[name=div-eq]');
+				let socMetaThree = document.querySelectorAll('input[name=human-rights]');
+				let socMetaFour = document.querySelectorAll('input[name=community]');
+				let socMetaFive = document.querySelectorAll('input[name=product-res]');
+				let govMetaOne = document.querySelectorAll('input[name=management]');
+				let govMetaTwo = document.querySelectorAll('input[name=shareholders]');
+				let govMetaThree = document.querySelectorAll('input[name=corp-res]');
+				let govMetaFour = document.querySelectorAll('input[name=scope-audit]');
+
+
+
+
+				// console.log(x);
+
+				for (en1 of envMetaOne) {
+					if (en1.checked === true) {
+						var envMetaOneSelected = en1.value;
+					}
+				}
+				for (en2 of envMetaTwo) {
+					if (en2.checked === true) {
+						var envMetaTwoSelected = en2.value;
+					}
+				}
+				for (en3 of envMetaThree) {
+					if (en3.checked === true) {
+						var envMetaThreeSelected = en3.value;
+					}
+				}
+				let environmentVector = [envMetaOneSelected, envMetaTwoSelected, envMetaThreeSelected];
+				// console.log(environmentVector);
+
+
+
+				for (soc1 of socMetaOne) {
+					if (soc1.checked === true) {
+						var socMetaOneSelected = soc1.value;
+					}
+				}
+				for (soc2 of socMetaTwo) {
+					if (soc2.checked === true) {
+						var socMetaTwoSelected = soc2.value;
+					}
+				}
+				for (soc3 of socMetaThree) {
+					if (soc3.checked === true) {
+						var socMetaThreeSelected = soc3.value;
+					}
+				}
+				for (soc4 of socMetaFour) {
+					if (soc4.checked === true) {
+						var socMetaFourSelected = soc4.value;
+					}
+				}
+				for (soc5 of socMetaFive) {
+					if (soc5.checked === true) {
+						var socMetaFiveSelected = soc5.value;
+					}
+				}
+				let socialVector = [socMetaOneSelected, socMetaTwoSelected, socMetaThreeSelected, socMetaFourSelected, socMetaFiveSelected];
+				// console.log(socialVector);
+
+
+				for (gov1 of govMetaOne) {
+					if (gov1.checked === true) {
+						var govMetaOneSelected = gov1.value;
+					}
+				}
+				for (gov2 of govMetaTwo) {
+					if (gov2.checked === true) {
+						var govMetaTwoSelected = gov2.value;
+					}
+				}
+				for (gov3 of govMetaThree) {
+					if (gov3.checked === true) {
+						var govMetaThreeSelected = gov3.value;
+					}
+				}
+				for (gov4 of govMetaFour) {
+					if (gov4.checked === true) {
+						var govMetaFourSelected = gov4.value;
+					}
+				}
+				let governanceVector = [govMetaOneSelected, govMetaTwoSelected, govMetaThreeSelected, govMetaFourSelected];
+				// console.log(governanceVector);
+
+				//print to CSV
+				const rows = [environmentVector, socialVector, governanceVector];
+let csvContent = "data:text/csv;charset=utf-8,";
+rows.forEach(function(rowArray){
+   let row = rowArray.join(",");
+   csvContent += row + "\r\n";
+}); 
+
+var encodedUri = encodeURI(csvContent);
+window.open(encodedUri);
+
 
 			}
 		</script>
